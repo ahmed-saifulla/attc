@@ -2171,3 +2171,6 @@ footer .credits {
 .lh-20{
   line-height: 20px;
 }
+.stroke-white-4{
+  -webkit-text-stroke: 4px white;
+}
