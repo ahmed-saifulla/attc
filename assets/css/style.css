@@ -149,6 +149,30 @@ a:hover {
   z-index: 2;
 }
 
+.nav-vision2020-mobile {
+  width: 100px;
+  /* margin-left: 189px; */
+}
+.nav-vision2020 {
+  width: 100px;
+  /* margin-left: 189px; */
+  display: none;
+}
+@media only screen and (min-width: 991px) {
+  .nav-vision2020-mobile {
+    display: none;
+  }
+  .nav-vision2020 {
+    display: block;
+    margin-left: 87px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-vision2020 {
+    margin-left: 189px;  }
+}
+
 /*------/ Bg Image /------*/
 .bg-image {
   background-repeat: no-repeat;
@@ -364,10 +388,12 @@ a:hover {
 
 /*------/ Overlay /------*/
 .overlay-a {
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 27%,
-      rgba(0, 0, 0, 0.65) 90%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 27%,
+    rgba(0, 0, 0, 0.65) 90%
+  );
 }
 
 .overlay {
@@ -637,7 +663,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .navbar-default.navbar-trans .nav-item,
   .navbar-default.navbar-reduce .nav-item {
     margin-left: 15px;
@@ -682,12 +707,12 @@ a:hover {
   transform-origin: left;
 }
 
-.navbar-default.navbar-trans .show>.nav-link:before,
-.navbar-default.navbar-trans .active>.nav-link:before,
+.navbar-default.navbar-trans .show > .nav-link:before,
+.navbar-default.navbar-trans .active > .nav-link:before,
 .navbar-default.navbar-trans .nav-link.show:before,
 .navbar-default.navbar-trans .nav-link.active:before,
-.navbar-default.navbar-reduce .show>.nav-link:before,
-.navbar-default.navbar-reduce .active>.nav-link:before,
+.navbar-default.navbar-reduce .show > .nav-link:before,
+.navbar-default.navbar-reduce .active > .nav-link:before,
 .navbar-default.navbar-reduce .nav-link.show:before,
 .navbar-default.navbar-reduce .nav-link.active:before {
   transform: scaleX(1);
@@ -701,8 +726,8 @@ a:hover {
   color: #000000;
 }
 
-.navbar-default.navbar-trans .show>.nav-link,
-.navbar-default.navbar-trans .active>.nav-link,
+.navbar-default.navbar-trans .show > .nav-link,
+.navbar-default.navbar-trans .active > .nav-link,
 .navbar-default.navbar-trans .nav-link.show,
 .navbar-default.navbar-trans .nav-link.active {
   color: #000000;
@@ -726,8 +751,8 @@ a:hover {
   color: #000000;
 }
 
-.navbar-default.navbar-reduce .show>.nav-link,
-.navbar-default.navbar-reduce .active>.nav-link,
+.navbar-default.navbar-reduce .show > .nav-link,
+.navbar-default.navbar-reduce .active > .nav-link,
 .navbar-default.navbar-reduce .nav-link.show,
 .navbar-default.navbar-reduce .nav-link.active {
   color: #000000;
@@ -1165,7 +1190,6 @@ a:hover {
 # Card General
 --------------------------------------------------------------*/
 @media (max-width: 767px) {
-
   .card-box-a,
   .card-box-b,
   .card-box-c,
@@ -1175,7 +1199,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .grid .card-box-a,
   .grid .card-box-b,
   .grid .card-box-c,
@@ -1201,7 +1224,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .card-box-a:hover .img-a,
   .card-box-a:hover .img-b,
   .card-box-b:hover .img-a,
@@ -1211,7 +1233,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .card-box-a .price-a,
   .card-box-b .price-a {
     font-size: 0.9rem;
@@ -1219,7 +1240,6 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-
   .card-box-a .price-a,
   .card-box-b .price-a {
     font-size: 1rem;
@@ -1247,10 +1267,12 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 27%,
-      rgba(0, 0, 0, 0.65) 90%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 27%,
+    rgba(0, 0, 0, 0.65) 90%
+  );
 }
 
 /*======================================
@@ -2255,7 +2277,7 @@ footer .credits {
 }
 
 /* end fix */
-.owl-nav>button {
+.owl-nav > button {
   /* margin-top: -26px; */
   /* position: absolute; */
   /* top: 50%; */
@@ -2286,7 +2308,7 @@ footer .credits {
   padding-left: 10px;
 }
 
-@media only screen and (min-width:450px) {
+@media only screen and (min-width: 991px) {
   .nav-text {
     display: flex;
   }
